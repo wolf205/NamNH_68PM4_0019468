@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace QLSV
 {
-    public partial class Form1 : Form
+    public partial class Form_QLLH : Form
     {
-        public Form1()
+        public Form_QLLH()
         {
             InitializeComponent();
+        }
+
+        private void llb_qlsv_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form_QLSV f_qlsv = new Form_QLSV();
+            f_qlsv.Show();
+            this.Close();
         }
     }
 }
