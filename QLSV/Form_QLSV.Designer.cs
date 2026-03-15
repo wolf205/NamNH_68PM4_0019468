@@ -2,59 +2,60 @@
 {
     partial class Form_QLSV
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
             base.Dispose(disposing);
         }
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.btn_read = new System.Windows.Forms.Button();
+            this.pnl_header = new System.Windows.Forms.Panel();
+            this.lbl_title = new System.Windows.Forms.Label();
+            this.lb_mssv = new System.Windows.Forms.Label();
+            this.txt_mssv = new System.Windows.Forms.TextBox();
+            this.lb_hoten = new System.Windows.Forms.Label();
+            this.txt_hoten = new System.Windows.Forms.TextBox();
+            this.lb_gioitinh = new System.Windows.Forms.Label();
+            this.txt_gioitinh = new System.Windows.Forms.TextBox();
+            this.lb_ngaysinh = new System.Windows.Forms.Label();
+            this.dtp_ngaysinh = new System.Windows.Forms.DateTimePicker();
+            this.lb_lop = new System.Windows.Forms.Label();
+            this.txt_lop = new System.Windows.Forms.TextBox();
+            this.pnl_buttons = new System.Windows.Forms.Panel();
+            this.btn_addSV = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
-            this.btn_addSV = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lb_lop = new System.Windows.Forms.Label();
-            this.lb_ngaysinh = new System.Windows.Forms.Label();
-            this.lb_gioitinh = new System.Windows.Forms.Label();
-            this.lb_hoten = new System.Windows.Forms.Label();
-            this.lb_mssv = new System.Windows.Forms.Label();
-            this.llb_QLLH = new System.Windows.Forms.LinkLabel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_refesh = new System.Windows.Forms.Button();
+            this.pnl_right_header = new System.Windows.Forms.Panel();
+            this.txt_search = new System.Windows.Forms.TextBox();
+            this.btn_search = new System.Windows.Forms.Button();
+            this.dt_sinhvien = new System.Windows.Forms.DataGridView();
             this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaysinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.malop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnl_right_footer = new System.Windows.Forms.Panel();
+            this.llb_QLLH = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pnl_header.SuspendLayout();
+            this.pnl_buttons.SuspendLayout();
+            this.pnl_right_header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_sinhvien)).BeginInit();
+            this.pnl_right_footer.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -65,237 +66,397 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.btn_read);
-            this.splitContainer1.Panel1.Controls.Add(this.btn_update);
-            this.splitContainer1.Panel1.Controls.Add(this.btn_delete);
-            this.splitContainer1.Panel1.Controls.Add(this.btn_addSV);
-            this.splitContainer1.Panel1.Controls.Add(this.textBox4);
-            this.splitContainer1.Panel1.Controls.Add(this.textBox5);
-            this.splitContainer1.Panel1.Controls.Add(this.textBox3);
-            this.splitContainer1.Panel1.Controls.Add(this.textBox2);
-            this.splitContainer1.Panel1.Controls.Add(this.textBox1);
-            this.splitContainer1.Panel1.Controls.Add(this.lb_lop);
-            this.splitContainer1.Panel1.Controls.Add(this.lb_ngaysinh);
-            this.splitContainer1.Panel1.Controls.Add(this.lb_gioitinh);
-            this.splitContainer1.Panel1.Controls.Add(this.lb_hoten);
+            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
+            this.splitContainer1.Panel1.Controls.Add(this.pnl_header);
             this.splitContainer1.Panel1.Controls.Add(this.lb_mssv);
+            this.splitContainer1.Panel1.Controls.Add(this.txt_mssv);
+            this.splitContainer1.Panel1.Controls.Add(this.lb_hoten);
+            this.splitContainer1.Panel1.Controls.Add(this.txt_hoten);
+            this.splitContainer1.Panel1.Controls.Add(this.lb_gioitinh);
+            this.splitContainer1.Panel1.Controls.Add(this.txt_gioitinh);
+            this.splitContainer1.Panel1.Controls.Add(this.lb_ngaysinh);
+            this.splitContainer1.Panel1.Controls.Add(this.dtp_ngaysinh);
+            this.splitContainer1.Panel1.Controls.Add(this.lb_lop);
+            this.splitContainer1.Panel1.Controls.Add(this.txt_lop);
+            this.splitContainer1.Panel1.Controls.Add(this.pnl_buttons);
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.llb_QLLH);
-            this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
-            this.splitContainer1.Size = new System.Drawing.Size(1143, 866);
-            this.splitContainer1.SplitterDistance = 381;
+            this.splitContainer1.Panel2.BackColor = System.Drawing.Color.White;
+            this.splitContainer1.Panel2.Controls.Add(this.pnl_right_header);
+            this.splitContainer1.Panel2.Controls.Add(this.dt_sinhvien);
+            this.splitContainer1.Panel2.Controls.Add(this.pnl_right_footer);
+            this.splitContainer1.Size = new System.Drawing.Size(1200, 750);
+            this.splitContainer1.SplitterDistance = 400;
+            this.splitContainer1.SplitterWidth = 2;
             this.splitContainer1.TabIndex = 0;
             // 
-            // btn_read
+            // pnl_header
             // 
-            this.btn_read.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_read.Location = new System.Drawing.Point(188, 709);
-            this.btn_read.Name = "btn_read";
-            this.btn_read.Size = new System.Drawing.Size(133, 46);
-            this.btn_read.TabIndex = 2;
-            this.btn_read.Text = "Chi Tiết";
-            this.btn_read.UseVisualStyleBackColor = true;
+            this.pnl_header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
+            this.pnl_header.Controls.Add(this.lbl_title);
+            this.pnl_header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_header.Location = new System.Drawing.Point(0, 0);
+            this.pnl_header.Name = "pnl_header";
+            this.pnl_header.Size = new System.Drawing.Size(400, 72);
+            this.pnl_header.TabIndex = 0;
             // 
-            // btn_update
+            // lbl_title
             // 
-            this.btn_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_update.Location = new System.Drawing.Point(188, 622);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(133, 46);
-            this.btn_update.TabIndex = 2;
-            this.btn_update.Text = "Sửa";
-            this.btn_update.UseVisualStyleBackColor = true;
-            // 
-            // btn_delete
-            // 
-            this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delete.Location = new System.Drawing.Point(34, 709);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(133, 46);
-            this.btn_delete.TabIndex = 2;
-            this.btn_delete.Text = "Xoá";
-            this.btn_delete.UseVisualStyleBackColor = true;
-            // 
-            // btn_addSV
-            // 
-            this.btn_addSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_addSV.Location = new System.Drawing.Point(34, 622);
-            this.btn_addSV.Name = "btn_addSV";
-            this.btn_addSV.Size = new System.Drawing.Size(133, 46);
-            this.btn_addSV.TabIndex = 2;
-            this.btn_addSV.Text = "Thêm";
-            this.btn_addSV.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(26, 531);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(309, 26);
-            this.textBox4.TabIndex = 1;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(26, 424);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(309, 26);
-            this.textBox5.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(26, 314);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(309, 26);
-            this.textBox3.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(26, 209);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(309, 26);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(26, 109);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(309, 26);
-            this.textBox1.TabIndex = 1;
-            // 
-            // lb_lop
-            // 
-            this.lb_lop.AutoSize = true;
-            this.lb_lop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_lop.Location = new System.Drawing.Point(21, 477);
-            this.lb_lop.Name = "lb_lop";
-            this.lb_lop.Size = new System.Drawing.Size(54, 29);
-            this.lb_lop.TabIndex = 0;
-            this.lb_lop.Text = "Lớp";
-            // 
-            // lb_ngaysinh
-            // 
-            this.lb_ngaysinh.AutoSize = true;
-            this.lb_ngaysinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_ngaysinh.Location = new System.Drawing.Point(21, 367);
-            this.lb_ngaysinh.Name = "lb_ngaysinh";
-            this.lb_ngaysinh.Size = new System.Drawing.Size(123, 29);
-            this.lb_ngaysinh.TabIndex = 0;
-            this.lb_ngaysinh.Text = "Ngày Sinh";
-            // 
-            // lb_gioitinh
-            // 
-            this.lb_gioitinh.AutoSize = true;
-            this.lb_gioitinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_gioitinh.Location = new System.Drawing.Point(21, 260);
-            this.lb_gioitinh.Name = "lb_gioitinh";
-            this.lb_gioitinh.Size = new System.Drawing.Size(111, 29);
-            this.lb_gioitinh.TabIndex = 0;
-            this.lb_gioitinh.Text = "Giới Tính";
-            // 
-            // lb_hoten
-            // 
-            this.lb_hoten.AutoSize = true;
-            this.lb_hoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_hoten.Location = new System.Drawing.Point(21, 158);
-            this.lb_hoten.Name = "lb_hoten";
-            this.lb_hoten.Size = new System.Drawing.Size(93, 29);
-            this.lb_hoten.TabIndex = 0;
-            this.lb_hoten.Text = "Họ Tên";
+            this.lbl_title.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_title.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.lbl_title.ForeColor = System.Drawing.Color.White;
+            this.lbl_title.Location = new System.Drawing.Point(0, 0);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(400, 72);
+            this.lbl_title.TabIndex = 0;
+            this.lbl_title.Text = "QUẢN LÝ SINH VIÊN";
+            this.lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lb_mssv
             // 
-            this.lb_mssv.AutoSize = true;
-            this.lb_mssv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_mssv.Location = new System.Drawing.Point(20, 62);
+            this.lb_mssv.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lb_mssv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(65)))), ((int)(((byte)(81)))));
+            this.lb_mssv.Location = new System.Drawing.Point(30, 95);
             this.lb_mssv.Name = "lb_mssv";
-            this.lb_mssv.Size = new System.Drawing.Size(80, 29);
-            this.lb_mssv.TabIndex = 0;
-            this.lb_mssv.Text = "MSSV";
+            this.lb_mssv.Size = new System.Drawing.Size(340, 22);
+            this.lb_mssv.TabIndex = 1;
+            this.lb_mssv.Text = "MÃ SỐ SINH VIÊN";
             // 
-            // llb_QLLH
+            // txt_mssv
             // 
-            this.llb_QLLH.AutoSize = true;
-            this.llb_QLLH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llb_QLLH.Location = new System.Drawing.Point(293, 774);
-            this.llb_QLLH.Name = "llb_QLLH";
-            this.llb_QLLH.Size = new System.Drawing.Size(197, 29);
-            this.llb_QLLH.TabIndex = 1;
-            this.llb_QLLH.TabStop = true;
-            this.llb_QLLH.Text = "Quản Lý Lớp Học";
-            this.llb_QLLH.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llb_QLLH_LinkClicked);
+            this.txt_mssv.BackColor = System.Drawing.Color.White;
+            this.txt_mssv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_mssv.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txt_mssv.Location = new System.Drawing.Point(30, 120);
+            this.txt_mssv.Name = "txt_mssv";
+            this.txt_mssv.Size = new System.Drawing.Size(340, 37);
+            this.txt_mssv.TabIndex = 1;
             // 
-            // dataGridView1
+            // lb_hoten
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.lb_hoten.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lb_hoten.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(65)))), ((int)(((byte)(81)))));
+            this.lb_hoten.Location = new System.Drawing.Point(30, 172);
+            this.lb_hoten.Name = "lb_hoten";
+            this.lb_hoten.Size = new System.Drawing.Size(340, 22);
+            this.lb_hoten.TabIndex = 2;
+            this.lb_hoten.Text = "HỌ VÀ TÊN";
+            // 
+            // txt_hoten
+            // 
+            this.txt_hoten.BackColor = System.Drawing.Color.White;
+            this.txt_hoten.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_hoten.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txt_hoten.Location = new System.Drawing.Point(30, 197);
+            this.txt_hoten.Name = "txt_hoten";
+            this.txt_hoten.Size = new System.Drawing.Size(340, 37);
+            this.txt_hoten.TabIndex = 2;
+            // 
+            // lb_gioitinh
+            // 
+            this.lb_gioitinh.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lb_gioitinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(65)))), ((int)(((byte)(81)))));
+            this.lb_gioitinh.Location = new System.Drawing.Point(30, 249);
+            this.lb_gioitinh.Name = "lb_gioitinh";
+            this.lb_gioitinh.Size = new System.Drawing.Size(340, 22);
+            this.lb_gioitinh.TabIndex = 3;
+            this.lb_gioitinh.Text = "GIỚI TÍNH";
+            // 
+            // txt_gioitinh
+            // 
+            this.txt_gioitinh.BackColor = System.Drawing.Color.White;
+            this.txt_gioitinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_gioitinh.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txt_gioitinh.Location = new System.Drawing.Point(30, 274);
+            this.txt_gioitinh.Name = "txt_gioitinh";
+            this.txt_gioitinh.Size = new System.Drawing.Size(340, 37);
+            this.txt_gioitinh.TabIndex = 3;
+            // 
+            // lb_ngaysinh
+            // 
+            this.lb_ngaysinh.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lb_ngaysinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(65)))), ((int)(((byte)(81)))));
+            this.lb_ngaysinh.Location = new System.Drawing.Point(30, 326);
+            this.lb_ngaysinh.Name = "lb_ngaysinh";
+            this.lb_ngaysinh.Size = new System.Drawing.Size(340, 22);
+            this.lb_ngaysinh.TabIndex = 4;
+            this.lb_ngaysinh.Text = "NGÀY SINH";
+            // 
+            // dtp_ngaysinh
+            // 
+            this.dtp_ngaysinh.CalendarFont = new System.Drawing.Font("Segoe UI", 10F);
+            this.dtp_ngaysinh.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.dtp_ngaysinh.Location = new System.Drawing.Point(30, 351);
+            this.dtp_ngaysinh.Name = "dtp_ngaysinh";
+            this.dtp_ngaysinh.Size = new System.Drawing.Size(340, 37);
+            this.dtp_ngaysinh.TabIndex = 4;
+            // 
+            // lb_lop
+            // 
+            this.lb_lop.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lb_lop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(65)))), ((int)(((byte)(81)))));
+            this.lb_lop.Location = new System.Drawing.Point(30, 403);
+            this.lb_lop.Name = "lb_lop";
+            this.lb_lop.Size = new System.Drawing.Size(340, 22);
+            this.lb_lop.TabIndex = 5;
+            this.lb_lop.Text = "LỚP";
+            // 
+            // txt_lop
+            // 
+            this.txt_lop.BackColor = System.Drawing.Color.White;
+            this.txt_lop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_lop.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txt_lop.Location = new System.Drawing.Point(30, 428);
+            this.txt_lop.Name = "txt_lop";
+            this.txt_lop.Size = new System.Drawing.Size(340, 37);
+            this.txt_lop.TabIndex = 5;
+            // 
+            // pnl_buttons
+            // 
+            this.pnl_buttons.BackColor = System.Drawing.Color.Transparent;
+            this.pnl_buttons.Controls.Add(this.btn_addSV);
+            this.pnl_buttons.Controls.Add(this.btn_update);
+            this.pnl_buttons.Controls.Add(this.btn_delete);
+            this.pnl_buttons.Controls.Add(this.btn_refesh);
+            this.pnl_buttons.Location = new System.Drawing.Point(20, 490);
+            this.pnl_buttons.Name = "pnl_buttons";
+            this.pnl_buttons.Size = new System.Drawing.Size(360, 120);
+            this.pnl_buttons.TabIndex = 6;
+            // 
+            // btn_addSV
+            // 
+            this.btn_addSV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(163)))), ((int)(((byte)(74)))));
+            this.btn_addSV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_addSV.FlatAppearance.BorderSize = 0;
+            this.btn_addSV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_addSV.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btn_addSV.ForeColor = System.Drawing.Color.White;
+            this.btn_addSV.Location = new System.Drawing.Point(0, 0);
+            this.btn_addSV.Name = "btn_addSV";
+            this.btn_addSV.Size = new System.Drawing.Size(170, 48);
+            this.btn_addSV.TabIndex = 6;
+            this.btn_addSV.Text = "Thêm";
+            this.btn_addSV.UseVisualStyleBackColor = false;
+            this.btn_addSV.Click += new System.EventHandler(this.btn_addSV_Click);
+            // 
+            // btn_update
+            // 
+            this.btn_update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
+            this.btn_update.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_update.FlatAppearance.BorderSize = 0;
+            this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_update.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btn_update.ForeColor = System.Drawing.Color.White;
+            this.btn_update.Location = new System.Drawing.Point(190, 0);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(170, 48);
+            this.btn_update.TabIndex = 7;
+            this.btn_update.Text = "Sửa";
+            this.btn_update.UseVisualStyleBackColor = false;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
+            // 
+            // btn_delete
+            // 
+            this.btn_delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.btn_delete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_delete.FlatAppearance.BorderSize = 0;
+            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btn_delete.ForeColor = System.Drawing.Color.White;
+            this.btn_delete.Location = new System.Drawing.Point(0, 62);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(170, 48);
+            this.btn_delete.TabIndex = 8;
+            this.btn_delete.Text = "Xoá";
+            this.btn_delete.UseVisualStyleBackColor = false;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
+            // 
+            // btn_refesh
+            // 
+            this.btn_refesh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(114)))), ((int)(((byte)(128)))));
+            this.btn_refesh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_refesh.FlatAppearance.BorderSize = 0;
+            this.btn_refesh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_refesh.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btn_refesh.ForeColor = System.Drawing.Color.White;
+            this.btn_refesh.Location = new System.Drawing.Point(190, 62);
+            this.btn_refesh.Name = "btn_refesh";
+            this.btn_refesh.Size = new System.Drawing.Size(170, 48);
+            this.btn_refesh.TabIndex = 9;
+            this.btn_refesh.Text = "Làm mới";
+            this.btn_refesh.UseVisualStyleBackColor = false;
+            this.btn_refesh.Click += new System.EventHandler(this.btn_refesh_Click);
+            // 
+            // pnl_right_header
+            // 
+            this.pnl_right_header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.pnl_right_header.Controls.Add(this.txt_search);
+            this.pnl_right_header.Controls.Add(this.btn_search);
+            this.pnl_right_header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_right_header.Location = new System.Drawing.Point(0, 0);
+            this.pnl_right_header.Name = "pnl_right_header";
+            this.pnl_right_header.Size = new System.Drawing.Size(798, 80);
+            this.pnl_right_header.TabIndex = 0;
+            // 
+            // txt_search
+            // 
+            this.txt_search.BackColor = System.Drawing.Color.White;
+            this.txt_search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_search.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txt_search.Location = new System.Drawing.Point(53, 24);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.Size = new System.Drawing.Size(545, 37);
+            this.txt_search.TabIndex = 3;
+            // 
+            // btn_search
+            // 
+            this.btn_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
+            this.btn_search.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_search.FlatAppearance.BorderSize = 0;
+            this.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_search.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_search.ForeColor = System.Drawing.Color.White;
+            this.btn_search.Location = new System.Drawing.Point(612, 24);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(130, 37);
+            this.btn_search.TabIndex = 4;
+            this.btn_search.Text = "Tìm kiếm";
+            this.btn_search.UseVisualStyleBackColor = false;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
+            // 
+            // dt_sinhvien
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.dt_sinhvien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dt_sinhvien.BackgroundColor = System.Drawing.Color.White;
+            this.dt_sinhvien.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dt_sinhvien.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dt_sinhvien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dt_sinhvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dt_sinhvien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MSSV,
             this.HoTen,
             this.gioitinh,
             this.ngaysinh,
-            this.lop});
-            this.dataGridView1.Location = new System.Drawing.Point(102, 62);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(549, 666);
-            this.dataGridView1.TabIndex = 0;
+            this.malop});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(234)))), ((int)(((byte)(254)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(78)))), ((int)(((byte)(216)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dt_sinhvien.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dt_sinhvien.EnableHeadersVisualStyles = false;
+            this.dt_sinhvien.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
+            this.dt_sinhvien.Location = new System.Drawing.Point(16, 86);
+            this.dt_sinhvien.Name = "dt_sinhvien";
+            this.dt_sinhvien.RowHeadersVisible = false;
+            this.dt_sinhvien.RowHeadersWidth = 62;
+            this.dt_sinhvien.RowTemplate.Height = 36;
+            this.dt_sinhvien.Size = new System.Drawing.Size(760, 590);
+            this.dt_sinhvien.TabIndex = 0;
+            this.dt_sinhvien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dt_sinhvien_CellClick);
             // 
             // MSSV
             // 
-            this.MSSV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.MSSV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.MSSV.DataPropertyName = "mssv";
             this.MSSV.HeaderText = "MSSV";
-            this.MSSV.MinimumWidth = 8;
+            this.MSSV.MinimumWidth = 100;
             this.MSSV.Name = "MSSV";
-            this.MSSV.Width = 91;
             // 
             // HoTen
             // 
-            this.HoTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.HoTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.HoTen.DataPropertyName = "hoten";
             this.HoTen.HeaderText = "Họ Tên";
-            this.HoTen.MinimumWidth = 8;
+            this.HoTen.MinimumWidth = 150;
             this.HoTen.Name = "HoTen";
-            this.HoTen.Width = 97;
             // 
             // gioitinh
             // 
-            this.gioitinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.gioitinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.gioitinh.DataPropertyName = "gioitinh";
             this.gioitinh.HeaderText = "Giới Tính";
-            this.gioitinh.MinimumWidth = 8;
+            this.gioitinh.MinimumWidth = 90;
             this.gioitinh.Name = "gioitinh";
-            this.gioitinh.Width = 107;
+            this.gioitinh.Width = 126;
             // 
             // ngaysinh
             // 
-            this.ngaysinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.ngaysinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ngaysinh.DataPropertyName = "ngaysinh";
             this.ngaysinh.HeaderText = "Ngày Sinh";
-            this.ngaysinh.MinimumWidth = 8;
+            this.ngaysinh.MinimumWidth = 110;
             this.ngaysinh.Name = "ngaysinh";
-            this.ngaysinh.Width = 117;
+            this.ngaysinh.Width = 138;
             // 
-            // lop
+            // malop
             // 
-            this.lop.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.lop.HeaderText = "Lớp";
-            this.lop.MinimumWidth = 8;
-            this.lop.Name = "lop";
-            this.lop.Width = 72;
+            this.malop.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.malop.DataPropertyName = "malop";
+            this.malop.HeaderText = "Mã Lớp";
+            this.malop.MinimumWidth = 90;
+            this.malop.Name = "malop";
+            this.malop.Width = 114;
+            // 
+            // pnl_right_footer
+            // 
+            this.pnl_right_footer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.pnl_right_footer.Controls.Add(this.llb_QLLH);
+            this.pnl_right_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnl_right_footer.Location = new System.Drawing.Point(0, 700);
+            this.pnl_right_footer.Name = "pnl_right_footer";
+            this.pnl_right_footer.Size = new System.Drawing.Size(798, 50);
+            this.pnl_right_footer.TabIndex = 1;
+            // 
+            // llb_QLLH
+            // 
+            this.llb_QLLH.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(78)))), ((int)(((byte)(216)))));
+            this.llb_QLLH.AutoSize = true;
+            this.llb_QLLH.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.llb_QLLH.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
+            this.llb_QLLH.Location = new System.Drawing.Point(303, 11);
+            this.llb_QLLH.Name = "llb_QLLH";
+            this.llb_QLLH.Size = new System.Drawing.Size(213, 30);
+            this.llb_QLLH.TabIndex = 0;
+            this.llb_QLLH.TabStop = true;
+            this.llb_QLLH.Text = "Quản Lý Lớp Học →";
+            this.llb_QLLH.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llb_QLLH_LinkClicked);
             // 
             // Form_QLSV
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1143, 866);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1200, 750);
             this.Controls.Add(this.splitContainer1);
+            this.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.MinimumSize = new System.Drawing.Size(1000, 650);
             this.Name = "Form_QLSV";
-            this.Text = "QLSV";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Quản Lý Sinh Viên";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
-            this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.pnl_header.ResumeLayout(false);
+            this.pnl_buttons.ResumeLayout(false);
+            this.pnl_right_header.ResumeLayout(false);
+            this.pnl_right_header.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_sinhvien)).EndInit();
+            this.pnl_right_footer.ResumeLayout(false);
+            this.pnl_right_footer.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -303,26 +464,33 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Label lb_ngaysinh;
-        private System.Windows.Forms.Label lb_gioitinh;
-        private System.Windows.Forms.Label lb_hoten;
+        private System.Windows.Forms.Panel pnl_header;
+        private System.Windows.Forms.Label lbl_title;
         private System.Windows.Forms.Label lb_mssv;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_mssv;
+        private System.Windows.Forms.Label lb_hoten;
+        private System.Windows.Forms.TextBox txt_hoten;
+        private System.Windows.Forms.Label lb_gioitinh;
+        private System.Windows.Forms.TextBox txt_gioitinh;
+        private System.Windows.Forms.Label lb_ngaysinh;
+        private System.Windows.Forms.DateTimePicker dtp_ngaysinh;
         private System.Windows.Forms.Label lb_lop;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button btn_read;
+        private System.Windows.Forms.TextBox txt_lop;
+        private System.Windows.Forms.Panel pnl_buttons;
+        private System.Windows.Forms.Button btn_addSV;
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_delete;
-        private System.Windows.Forms.Button btn_addSV;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btn_refesh;
+        private System.Windows.Forms.Panel pnl_right_header;
+        private System.Windows.Forms.TextBox txt_search;
+        private System.Windows.Forms.Button btn_search;
+        private System.Windows.Forms.DataGridView dt_sinhvien;
+        private System.Windows.Forms.Panel pnl_right_footer;
         private System.Windows.Forms.LinkLabel llb_QLLH;
         private System.Windows.Forms.DataGridViewTextBoxColumn MSSV;
         private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
         private System.Windows.Forms.DataGridViewTextBoxColumn gioitinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaysinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lop;
+        private System.Windows.Forms.DataGridViewTextBoxColumn malop;
     }
 }
