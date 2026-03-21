@@ -19,10 +19,10 @@ namespace QLSV
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            if (txt_username.Text == "admin" && txt_password.Text == "123")
+            if (txt_username.Text == "namnh" && txt_password.Text == "0019468")
             {
-                Form_QLSV f_qlsv = new Form_QLSV();
-                f_qlsv.Show();
+                MainForm f_main = new MainForm();
+                f_main.Show();
                 this.Hide();
             }
             else
@@ -36,7 +36,7 @@ namespace QLSV
             base.OnFormClosing(e);
             if (e.CloseReason == CloseReason.UserClosing)
             {
-                Application.Exit(); // Đóng toàn bộ ứng dụng khi nhấn X
+                Application.Exit();
             }
         }
     }
