@@ -56,8 +56,8 @@
             this.QLSVToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.QLSVToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.QLSVToolStripMenuItem.Name = "QLSVToolStripMenuItem";
-            this.QLSVToolStripMenuItem.Size = new System.Drawing.Size(89, 36);
-            this.QLSVToolStripMenuItem.Text = "QLSV";
+            this.QLSVToolStripMenuItem.Size = new System.Drawing.Size(227, 36);
+            this.QLSVToolStripMenuItem.Text = "Quản lý sinh viên";
             this.QLSVToolStripMenuItem.Click += new System.EventHandler(this.QLSVToolStripMenuItem_Click);
             // 
             // QLLHToolStripMenuItem
@@ -65,8 +65,8 @@
             this.QLLHToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.QLLHToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.QLLHToolStripMenuItem.Name = "QLLHToolStripMenuItem";
-            this.QLLHToolStripMenuItem.Size = new System.Drawing.Size(90, 36);
-            this.QLLHToolStripMenuItem.Text = "QLLH";
+            this.QLLHToolStripMenuItem.Size = new System.Drawing.Size(210, 36);
+            this.QLLHToolStripMenuItem.Text = "Quản lý lớp học";
             this.QLLHToolStripMenuItem.Click += new System.EventHandler(this.QLLHToolStripMenuItem_Click);
             // 
             // pnl_MainContent

@@ -209,7 +209,14 @@ namespace QLSV
    
             var ds = from sv in db.tbl_SinhViens
                      where sv.malop == maLop
-                     select sv;
+                     select new
+                     {
+                         sv.mssv,
+                         sv.hoten,
+                         sv.gioitinh,
+                         sv.ngaysinh,
+                         sv.malop
+                     };
 
             dt_sinhvien.DataSource = ds.ToList();
         }

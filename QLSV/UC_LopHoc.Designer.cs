@@ -34,11 +34,11 @@
             this.lb_siso = new System.Windows.Forms.Label();
             this.txt_siso = new System.Windows.Forms.TextBox();
             this.pnl_buttons = new System.Windows.Forms.Panel();
-            this.btn_danhsach = new System.Windows.Forms.Button();
             this.btn_addSV = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
             this.btn_refesh = new System.Windows.Forms.Button();
+            this.btn_danhsach = new System.Windows.Forms.Button();
             this.pnl_right_header = new System.Windows.Forms.Panel();
             this.txt_search = new System.Windows.Forms.TextBox();
             this.btn_search = new System.Windows.Forms.Button();
@@ -123,7 +123,7 @@
             this.lb_mslh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.lb_mslh.Location = new System.Drawing.Point(30, 85);
             this.lb_mslh.Name = "lb_mslh";
-            this.lb_mslh.Size = new System.Drawing.Size(320, 22);
+            this.lb_mslh.Size = new System.Drawing.Size(320, 32);
             this.lb_mslh.TabIndex = 1;
             this.lb_mslh.Text = "MÃ SỐ LỚP HỌC";
             // 
@@ -133,7 +133,7 @@
             this.txt_mslh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_mslh.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txt_mslh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.txt_mslh.Location = new System.Drawing.Point(30, 110);
+            this.txt_mslh.Location = new System.Drawing.Point(30, 120);
             this.txt_mslh.Name = "txt_mslh";
             this.txt_mslh.Size = new System.Drawing.Size(320, 37);
             this.txt_mslh.TabIndex = 1;
@@ -142,9 +142,9 @@
             // 
             this.lb_tenlop.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lb_tenlop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.lb_tenlop.Location = new System.Drawing.Point(30, 162);
+            this.lb_tenlop.Location = new System.Drawing.Point(30, 171);
             this.lb_tenlop.Name = "lb_tenlop";
-            this.lb_tenlop.Size = new System.Drawing.Size(320, 22);
+            this.lb_tenlop.Size = new System.Drawing.Size(320, 27);
             this.lb_tenlop.TabIndex = 2;
             this.lb_tenlop.Text = "TÊN LỚP";
             // 
@@ -154,7 +154,7 @@
             this.txt_tenlop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_tenlop.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txt_tenlop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.txt_tenlop.Location = new System.Drawing.Point(30, 187);
+            this.txt_tenlop.Location = new System.Drawing.Point(30, 201);
             this.txt_tenlop.Name = "txt_tenlop";
             this.txt_tenlop.Size = new System.Drawing.Size(320, 37);
             this.txt_tenlop.TabIndex = 2;
@@ -163,9 +163,9 @@
             // 
             this.lb_khoa.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lb_khoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.lb_khoa.Location = new System.Drawing.Point(30, 239);
+            this.lb_khoa.Location = new System.Drawing.Point(30, 252);
             this.lb_khoa.Name = "lb_khoa";
-            this.lb_khoa.Size = new System.Drawing.Size(320, 22);
+            this.lb_khoa.Size = new System.Drawing.Size(320, 27);
             this.lb_khoa.TabIndex = 3;
             this.lb_khoa.Text = "KHOA";
             // 
@@ -175,7 +175,7 @@
             this.txt_khoa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_khoa.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txt_khoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.txt_khoa.Location = new System.Drawing.Point(30, 264);
+            this.txt_khoa.Location = new System.Drawing.Point(30, 282);
             this.txt_khoa.Name = "txt_khoa";
             this.txt_khoa.Size = new System.Drawing.Size(320, 37);
             this.txt_khoa.TabIndex = 3;
@@ -184,9 +184,9 @@
             // 
             this.lb_nienkhoa.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lb_nienkhoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.lb_nienkhoa.Location = new System.Drawing.Point(30, 316);
+            this.lb_nienkhoa.Location = new System.Drawing.Point(30, 341);
             this.lb_nienkhoa.Name = "lb_nienkhoa";
-            this.lb_nienkhoa.Size = new System.Drawing.Size(320, 22);
+            this.lb_nienkhoa.Size = new System.Drawing.Size(320, 29);
             this.lb_nienkhoa.TabIndex = 4;
             this.lb_nienkhoa.Text = "NIÊN KHOÁ";
             // 
@@ -196,7 +196,7 @@
             this.txt_nienkhoa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_nienkhoa.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txt_nienkhoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.txt_nienkhoa.Location = new System.Drawing.Point(30, 341);
+            this.txt_nienkhoa.Location = new System.Drawing.Point(30, 373);
             this.txt_nienkhoa.Name = "txt_nienkhoa";
             this.txt_nienkhoa.Size = new System.Drawing.Size(320, 37);
             this.txt_nienkhoa.TabIndex = 4;
@@ -205,9 +205,9 @@
             // 
             this.lb_siso.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lb_siso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.lb_siso.Location = new System.Drawing.Point(30, 393);
+            this.lb_siso.Location = new System.Drawing.Point(30, 434);
             this.lb_siso.Name = "lb_siso";
-            this.lb_siso.Size = new System.Drawing.Size(320, 22);
+            this.lb_siso.Size = new System.Drawing.Size(320, 29);
             this.lb_siso.TabIndex = 5;
             this.lb_siso.Text = "SĨ SỐ";
             // 
@@ -217,7 +217,7 @@
             this.txt_siso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_siso.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.txt_siso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.txt_siso.Location = new System.Drawing.Point(30, 418);
+            this.txt_siso.Location = new System.Drawing.Point(30, 466);
             this.txt_siso.Name = "txt_siso";
             this.txt_siso.Size = new System.Drawing.Size(320, 37);
             this.txt_siso.TabIndex = 5;
@@ -230,7 +230,7 @@
             this.pnl_buttons.Controls.Add(this.btn_delete);
             this.pnl_buttons.Controls.Add(this.btn_refesh);
             this.pnl_buttons.Controls.Add(this.btn_danhsach);
-            this.pnl_buttons.Location = new System.Drawing.Point(20, 480);
+            this.pnl_buttons.Location = new System.Drawing.Point(19, 540);
             this.pnl_buttons.Name = "pnl_buttons";
             this.pnl_buttons.Size = new System.Drawing.Size(340, 160);
             this.pnl_buttons.TabIndex = 6;
@@ -484,6 +484,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dt_lophoc)).EndInit();
             this.pnl_right_footer.ResumeLayout(false);
             this.ResumeLayout(false);
+
         }
 
         #endregion
